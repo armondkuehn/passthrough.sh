@@ -1,0 +1,11 @@
+[Unit]
+Description=Passing through virtual functions to containers via pipework
+After=network.target
+
+[Service]
+Type=idle
+ExecStart=/root/passthrough.sh
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target
